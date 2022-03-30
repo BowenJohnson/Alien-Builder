@@ -1,0 +1,152 @@
+﻿<Page x:Class="Alien_Builder.CharacterPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Alien_Builder"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CharacterPage">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".2*"/>
+            <RowDefinition Height=".5*"/>
+            <RowDefinition Height=".5*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <!--Second Row First Col-->
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".1*"/>
+                    <RowDefinition />
+                    <RowDefinition Height=".1*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="1" Orientation="Vertical">
+                    <Label Grid.Row="1" Content="Player Name" Margin="4 0 8 0"/>
+                    <TextBox Grid.Row="2" x:Name="txtPlayerName" Margin="8 0 8 0" FontSize="16"
+                         HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                </StackPanel>
+            </Grid>
+
+            <!--Second Row Second Col-->
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".1*"/>
+                    <RowDefinition />
+                    <RowDefinition Height=".1*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="1" Orientation="Vertical">
+                    <Label Grid.Row="1" Content="Character Name" Margin="4 0 8 0"/>
+                    <TextBox Grid.Row="2" x:Name="txtCharacterName" Margin="8 0 8 0" FontSize="16"
+                         HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                </StackPanel>
+
+            </Grid>
+
+            <!--Second Row Third Col-->
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".1*"/>
+                    <RowDefinition />
+                    <RowDefinition Height=".1*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="1" Orientation="Vertical">
+                    <Label Grid.Row="1" Content="Personal Agenda" Margin="4 0 8 0"/>
+                    <TextBox Grid.Row="2" x:Name="txtAgenda" Margin="8 0 8 0" FontSize="16"
+                         HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                </StackPanel>
+
+            </Grid>
+
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <!--Third Row First Col-->
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".1*"/>
+                    <RowDefinition />
+                    <RowDefinition Height=".1*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="1" Orientation="Vertical">
+                    <Label Grid.Row="1" Content="Buddy" Margin="4 0 8 0"/>
+                    <TextBox Grid.Row="2" x:Name="txtBuddy" Margin="8 0 8 0" FontSize="16"
+                         HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                </StackPanel>
+            </Grid>
+
+            <!--Third Row Second Col-->
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".1*"/>
+                    <RowDefinition />
+                    <RowDefinition Height=".1*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="1" Orientation="Vertical">
+                    <Label Grid.Row="1" Content="Rival" Margin="4 0 8 0"/>
+                    <TextBox Grid.Row="2" x:Name="txtRival" Margin="8 0 8 0" FontSize="16"
+                         HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                </StackPanel>
+
+            </Grid>
+
+            <!--Third Row Third Col-->
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".1*"/>
+                    <RowDefinition />
+                    <RowDefinition Height=".1*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="1" Orientation="Vertical">
+                    <Label Grid.Row="1" Content="Signature Item" Margin="4 0 8 0"/>
+                    <TextBox Grid.Row="2" x:Name="txtSignatureItem" Margin="8 0 8 0" FontSize="16"
+                         HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+                </StackPanel>
+
+            </Grid>
+
+        </Grid>
+
+        <Grid Grid.Row="3">
+
+            <!--<StackPanel Grid.Row="1" Orientation="Vertical">-->
+            <Label Grid.Row="1" Content="Appearance" Margin="4 0 8 0"/>
+            <!--<TextBox Grid.Row="2" x:Name="txtAppearance" Margin="8 0 8 0" FontSize="16"
+                         HorizontalAlignment="Stretch" VerticalContentAlignment="Stretch" TextWrapping="Wrap"/>-->
+            <!--</StackPanel>-->
+        </Grid>
+
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="53*"/>
+                <ColumnDefinition Width="747*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="txtAppearance" Margin="8 0 8 8" FontSize="16"
+                         HorizontalAlignment="Stretch" VerticalContentAlignment="Stretch" TextWrapping="Wrap" Grid.ColumnSpan="2"/>
+        </Grid>
+
+    </Grid>
+</Page>
